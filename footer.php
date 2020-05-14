@@ -1,5 +1,12 @@
-<footer class="py-2 bg-dark w-100">
-   <p class="text-light text-center footer-size pt-3">Copyright @2020 Theme designed by Pearly Choong</p> 
+<footer class="py-2 bg-dark w-100 ">
+   <!-- <div class="row">
+       <div class="col-lg-6"> -->
+        <p class="text-light text-center footer-size pt-3">Copyright @2020 <?php bloginfo( 'name' ); ?></p> 
+       <!-- </div>
+       <div class="col-lg-6"> -->
+        <p class="text-light text-center footer-size">Theme designed by Pearly Choong</p>
+       <!-- </div>
+    </div> -->
 </footer>
 <?php wp_footer(); ?>
     </body>

@@ -86,3 +86,44 @@ function themename_custom_logo_setup() {
    }
    
 add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
+
+
+// custom post type
+function my_first_post_type(){
+  $args = array(
+    'labels' => array(
+        'name' => 'Arts',
+        'singular_name' => 'Art',
+    ),
+  'hierarchical' => true, //booleans value toggles between pages & posts without labels
+  'menu_icon' => 'dashicons-admin-customizer',
+  'public' => true,
+  'has_archive' => true,
+  'supports' => array('title', 'editor', 'thumbnail','custom-fields'),// if one of the argument is  not mentioned,
+  //if makes difference in features
+
+);
+  register_post_type('arts',$args);
+}
+add_action('init','my_first_post_type');
+
+
+// Taxanomy
+
+function my_first_taxonomy(){
+  $args = array(
+    'labels' => array(
+      'name' => 'Types',
+      'singular_name' => 'Type',
+    ),
+
+    'public' => true,
+    'hierarchical' => true,//false works like tags, true like catgories without labels
+
+
+  );
+  register_taxonomy('types', array('plants'),$args);
+
+}
+
+add_action('init', 'my_first_taxonomy');

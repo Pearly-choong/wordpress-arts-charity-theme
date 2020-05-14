@@ -2,6 +2,7 @@
 
 <section class="page-wrap">
     <h1 class="title"> <?php the_title(); ?></h1>
+    <hr class="title-decoration">
     <div class="container">
         <!-- <div class="mt-1 w-100"> -->
            
