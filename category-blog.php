@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
 <section class="page-wrap">
-<div class="">
-      <!-- <div class="mt-5"> -->
-      <h1 class="title"> <?php echo single_cat_title(); ?> </h1>
-      <hr class="title-decoration">
-      <?php get_template_part('includes/section','archive'); ?>
-      <!-- Pagination Method 1 -->
+
+   <h1 class="title"> <?php echo single_cat_title(); ?> </h1>
+   <hr class="title-decoration">
+   <?php get_template_part('includes/section','archive'); ?>
+
+    <!-- Pagination Method 1 -->
    <?php //previous_posts_link();  ?>
    <?php //next_posts_link();  ?>
 
@@ -23,7 +23,7 @@
          ));
       ?>
    </div>
-   <!-- </div> -->
-</div>
+
 </section>
+
 <?php get_footer(); ?>

@@ -122,7 +122,7 @@ function my_first_taxonomy(){
 
 
   );
-  register_taxonomy('types', array('plants'),$args);
+  register_taxonomy('types', array('arts'),$args);
 
 }
 
