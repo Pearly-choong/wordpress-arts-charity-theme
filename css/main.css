@@ -77,3 +77,44 @@ footer {
     width: 8%;
     border-top: 5px solid #2d4292;
 }
+
+
+
+.billingFields .form-row{
+    width: 100% !important;
+}
+
+.billingFields .form-row .woocommerce-input-wrapper{
+    width: 100% !important;
+}
+
+.billingFields .form-row .woocommerce-input-wrapper input,
+.billingFields .form-row .woocommerce-input-wrapper select{
+    height: calc(1.5em + .75rem + 2px) !important;
+    padding: .375rem .75rem !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+}
+
+.billingFields .form-row .woocommerce-input-wrapper textarea{
+    min-height: 200px !important;
+    max-height: 800px !important;
+    padding: .375rem .75rem !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+}
+
+
+.input-text {
+    border-radius: 5px;
+    border : 1px solid green;
+    padding: 0.3rem 1rem;
+    margin-left: 1rem;
+}
+
+#order_comments {
+    width: 15rem;
+    height: 5rem;
+}
