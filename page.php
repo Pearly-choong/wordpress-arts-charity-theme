@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="page-wrap">
+<section class="page-wrap mt-4">
     <h1 class="title"> <?php the_title(); ?></h1>
     <hr class="title-decoration">
     <div class="container">

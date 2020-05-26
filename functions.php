@@ -84,6 +84,7 @@ function themename_custom_logo_setup() {
     'header-text' => array( 'site-title', 'site-description' ),
     );
     add_theme_support( 'custom-logo', $defaults );
+    add_theme_support('site-title', $defaults);
    }
    
 add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
@@ -128,3 +129,26 @@ function my_first_taxonomy(){
 }
 
 add_action('init', 'my_first_taxonomy');
+
+
+
+//header image
+register_default_headers( array(
+  'defaultImage' => array(
+      'url'           => get_template_directory_uri() . '/images/background-image.jpg',
+      'thumbnail_url' => get_template_directory_uri() . '/images/background-image.jpg',
+      'description'   => __( 'The default image for the custom header.', 'artTheme' )
+  )
+) );
+
+$customHeaderDefaults = array(
+  'width' => 1280,
+  'height' => 520,
+  'default-image' => get_template_directory_uri() . '/images/background-image.jpg'
+);
+
+add_theme_support('custom-header', $customHeaderDefaults);
+
+
+//customize API
+require_once get_template_directory() . '/customizer.php';
