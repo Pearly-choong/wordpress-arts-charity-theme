@@ -1,12 +1,15 @@
 <?php get_header(); ?>
 
+<section class="my-background">
 <?php if(has_header_image()): ?>
     <div class="container-fluid p-0">
         <div class="header-image position-relative" style="background-image:url(<?php echo get_header_image(); ?>);"></div>      
-    </div>
-    
+    </div>    
 <?php endif; ?>
+
 <h1 class="display-4 siteTitle text-center text-light"><?php bloginfo( 'name' ); ?></h1>
+</section>
+
 <section class="page-wrap-home shadow p-3 mb-5 bg-white rounded">
     <!-- <h1 class="title"><?php the_title() ?></h1>
     <hr class="title-decoration"> -->

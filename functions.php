@@ -44,6 +44,13 @@ register_nav_menus(
 
 );
 
+//adding google fonts
+function wpb_add_google_fonts(){
+  wp_register_style('wp-googleFonts', '<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">');
+  wp_enqueue_style('wp_googleFonts');
+}
+add_action('wp_print-styles', 'wpb_add_google_fonts');
+
 
 //custom image size
 add_image_size('blog-large', 800, 400, false);

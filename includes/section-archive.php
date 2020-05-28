@@ -4,12 +4,12 @@
 if (have_posts()) : ?>
  
   <div class="row">
-    <div class="col-lg-9 mb-3">
-      <div class="d-flex justify-content-center">
+    <div class="col-sm-9 col-md-9 col-lg-12 col-xl-9 mb-3">
+      <div class="row pl-3">
         <?php while (have_posts()):
           the_post();
         ?>
-          <div class="blog-info">
+          <div class="blog-info col-sm-12 col-md-12 col-lg-6 col-xl-6">
             <div class="card my-3 border mr-5 shadow" style="width: 28rem;">        
                 <?php if(has_post_thumbnail()): ?>
                     <div>
@@ -31,7 +31,7 @@ if (have_posts()) : ?>
       </div>
     </div> <!-- col ends here -->
     
-    <div class="col-lg-3 widget">
+    <div class="col-sm-3 col-md-3 col-lg-12 col-xl-3 widget">
         <?php if(is_active_sidebar('blog-sidebar')) :?>
           <?php dynamic_sidebar('blog-sidebar'); ?>
         <?php endif; ?>
